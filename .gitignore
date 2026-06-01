@@ -1,0 +1,11 @@
+.vscode/
+moveZip.bat
+moveDebug.bat
+package.bat
+FS25_ImprovedControlsMenu.zip
+beta-changelog.md
+.kiro
+.DS_Store
+refs/
+.claude/
+log.txt

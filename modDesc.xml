@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="109">
+    <author>Ozz</author>
+    <version>1.0.0.6</version>
+    <iconFilename>icon_ImprovedControlsMenu.dds</iconFilename>
+    <title>
+        <en>Improved Controls Menu</en>
+        <de>Verbessertes Steuerungsmenü</de>
+        <fr>Menu de Contrôle Amélioré</fr>
+    </title>
+    <description>
+        <en><![CDATA[Improved Controls Menu
+        
+This mod allows you to manage your control bindings in an easier way.
+
+GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
+
+]]>
+        </en>
+        <de><![CDATA[Verbessertes Steuerungsmenü
+
+
+]]>
+        </de>
+        <fr><![CDATA[Menu de Contrôle Amélioré
+
+
+]]>
+        </fr>
+    </description>
+    <extraSourceFiles>
+        <sourceFile filename="src/main.lua"/>
+    </extraSourceFiles>
+    <multiplayer supported="true"/>
+    <l10n filenamePrefix="languages/l10n" />
+</modDesc>

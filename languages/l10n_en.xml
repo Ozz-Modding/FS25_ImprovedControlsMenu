@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>Ozz</translationContributors>
+    <texts>
+        <!-- Menu title -->
+        <text name="icm_title" text="Improved Controls"/>
+        
+        <!-- Filter controls -->
+        <text name="icm_searchByName" text="Search by Name"/>
+        <text name="icm_searchPrompt" text="Enter control name to search for"/>
+        <text name="icm_filterByKey" text="Filter by Key"/>
+        <text name="icm_filterByGamepad" text="Filter by Gamepad"/>
+        <text name="icm_clearFilters" text="Clear Filters"/>
+        <text name="icm_actionHeader" text="Action"/>
+        
+        <!-- Status messages -->
+        <text name="icm_showingAll" text="Showing all %d controls"/>
+        <text name="icm_showingFiltered" text="Showing %d of %d controls"/>
+        <text name="icm_nameFilter" text="Name filter: '%s'"/>
+        <text name="icm_inputFilter" text="Input filter: %s"/>
+        
+        <!-- Dialogs -->
+        <text name="icm_pressKeyToFilter" text="Press any keyboard key to filter controls by that input&#10;&#10;Press ESC to cancel"/>
+        <text name="icm_pressGamepadToFilter" text="Press any gamepad button or move an axis to filter controls by that input&#10;&#10;Press ESC to cancel"/>
+        <text name="icm_noControlsMatch" text="No controls match your filters"/>
+        
+        <!-- Tooltips/help -->
+        <text name="icm_conflictWarning" text="Warning: Multiple actions use this input"/>
+        <text name="icm_menuNavWarning" text="Caution: Changing menu navigation controls may make menus difficult to use"/>
+    </texts>
+</l10n>
