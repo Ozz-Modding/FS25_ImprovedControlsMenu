@@ -166,12 +166,23 @@ end
 function ImprovedControlsController:actionUsesInput(displayAction, inputFilter)
     for _, binding in pairs(displayAction.columnBindings) do
         if binding.deviceId == inputFilter.deviceId then
+            -- All filter axes must be present in the binding
+            local allMatch = true
             for _, filterAxis in ipairs(inputFilter.axisNames) do
+                local found = false
                 for _, bindingAxis in ipairs(binding.axisNames) do
                     if bindingAxis == filterAxis then
-                        return true
+                        found = true
+                        break
                     end
                 end
+                if not found then
+                    allMatch = false
+                    break
+                end
+            end
+            if allMatch then
+                return true
             end
         end
     end

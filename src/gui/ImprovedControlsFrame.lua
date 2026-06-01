@@ -302,18 +302,23 @@ function ImprovedControlsFrame:onKeyFilterCaptured(deviceName, keyName, inputVal
         return
     end
 
-    -- Only accept on key release
-    if inputValue > 0 then
-        return
-    end
+    local keyState = gatheringState.keyState
 
-    g_inputBinding:stopInputGathering()
-    self.isCapturingInputFilter = false
-    self.inputFilterIgnoreKeys = nil
-    g_gui:closeAllDialogs()
-    self.controlsController:setInputFilter(deviceName, {keyName})
-    self:assignDeviceTableData()
-    self:updateMenuButtons()
+    if inputValue > 0 then
+        -- Key pressed — collect into combo
+        table.insert(keyState, keyName)
+    else
+        -- Key released — apply filter with all collected keys
+        if #keyState > 0 then
+            g_inputBinding:stopInputGathering()
+            self.isCapturingInputFilter = false
+            self.inputFilterIgnoreKeys = nil
+            g_gui:closeAllDialogs()
+            self.controlsController:setInputFilter(deviceName, keyState)
+            self:assignDeviceTableData()
+            self:updateMenuButtons()
+        end
+    end
 end
 
 -- Filter by gamepad input
