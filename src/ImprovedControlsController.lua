@@ -55,16 +55,27 @@ function ImprovedControlsController:isWaitingForInput()
     return self.baseController.waitForInput
 end
 
--- Override to remove LOCKED_BINDINGS restriction for editing
+-- Override to allow locked bindings on gamepad but block keyboard (would break game menus)
 function ImprovedControlsController:onClickInput(deviceCategory, bindingIndex, displayActionBinding, bindingControlsRowIndex)
     local startedListening = false
-    
+
     if not self.waitForInput then
-        -- Skip the LOCKED_BINDINGS check - allow editing all controls
+        local lockedSet = ControlsController.LOCKED_BINDINGS[bindingIndex]
+        if lockedSet and lockedSet[displayActionBinding.action.name] then
+            if deviceCategory == InputDevice.CATEGORY.KEYBOARD_MOUSE then
+                if bindingIndex == ControlsController.BINDING_TERTIARY then
+                    self.baseController.messageCallback(ControlsController.MESSAGE_CANNOT_MAP_MOUSE)
+                else
+                    self.baseController.messageCallback(ControlsController.MESSAGE_CANNOT_MAP_KEY)
+                end
+                return startedListening
+            end
+            -- Gamepad: fall through and allow binding
+        end
         self:beginWaitForInput(deviceCategory, bindingIndex, displayActionBinding, bindingControlsRowIndex)
         startedListening = true
     end
-    
+
     return startedListening
 end
 

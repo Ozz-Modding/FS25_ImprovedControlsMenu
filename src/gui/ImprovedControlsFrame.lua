@@ -600,6 +600,7 @@ function ImprovedControlsFrame:onMenuAcceptUp(action, value, eventUsed)
 end
 
 function ImprovedControlsFrame:onInputClicked(deviceCategory, bindingId, actionData, bindingControlsRowIndex)
+    self.controlsMessageText = ""
     if self.controlsController:onClickInput(deviceCategory, bindingId, actionData, bindingControlsRowIndex) then
         self:showInputPrompt(deviceCategory, bindingId, actionData)
     end
@@ -631,7 +632,7 @@ end
 
 function ImprovedControlsFrame:setControlsMessage(messageId, additionalText, addLine)
     if messageId and messageId ~= ControlsController.MESSAGE_CLEAR then
-        local text = not addLine and "" or self.controlsMessageText .. "\n"
+        local text = (not addLine or self.controlsMessageText == "") and "" or self.controlsMessageText .. "\n"
         local uiSymbol = SettingsControlsFrame.CONTROLS_UI_STRINGS[messageId]
         local isWarning = SettingsControlsFrame.CONFLICT_MESSAGES[messageId] == true
         local dialogType = isWarning and DialogElement.TYPE_WARNING or DialogElement.TYPE_INFO
