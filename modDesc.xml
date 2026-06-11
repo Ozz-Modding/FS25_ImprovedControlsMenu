@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="109">
     <author>Ozz</author>
-    <version>1.0.0.6</version>
+    <version>1.0.0.0</version>
     <iconFilename>icon_ImprovedControlsMenu.dds</iconFilename>
     <title>
         <en>Improved Controls Menu</en>
         <de>Verbessertes Steuerungsmenü</de>
-        <fr>Menu de Contrôle Amélioré</fr>
+        <fr>Menu De Contrôle Amélioré</fr>
     </title>
     <description>
         <en><![CDATA[Improved Controls Menu
@@ -22,7 +22,7 @@ GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
 ]]>
         </de>
-        <fr><![CDATA[Menu de Contrôle Amélioré
+        <fr><![CDATA[Menu De Contrôle Amélioré
 
 
 ]]>

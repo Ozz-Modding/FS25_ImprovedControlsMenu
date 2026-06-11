@@ -29,7 +29,7 @@ end
 -- Add menu page to ingame menu (based on RedTape pattern)
 function ImprovedControlsMenu:addIngameMenuPage(frame)
     local pageName = "improvedControlsMenu"
-    local iconUVs = {0, 0, 80, 80}
+    local iconUVs = {0, 0, 128, 128}
     local insertAfter = "pageSettings" -- Insert after settings page
     
     -- Remove if already exists
@@ -79,7 +79,7 @@ function ImprovedControlsMenu:addIngameMenuPage(frame)
     
     -- Add tab icon
     local iconFileName = Utils.getFilename('images/menuIcon.dds', ImprovedControlsMenu.dir)
-    g_inGameMenu:addPageTab(g_inGameMenu[pageName], iconFileName, GuiUtils.getUVs(iconUVs, {80, 80}))
+    g_inGameMenu:addPageTab(g_inGameMenu[pageName], iconFileName, GuiUtils.getUVs(iconUVs, {128, 128}))
     
     -- Reorder in page frames
     for i = 1, #g_inGameMenu.pageFrames do
