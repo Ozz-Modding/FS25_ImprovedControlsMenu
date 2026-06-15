@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>Ozz</translationContributors>
+    <texts>
+        <!-- Menu title -->
+        <text name="icm_title" text="Verbesserte Steuerung"/>
+        
+        <!-- Filter controls -->
+        <text name="icm_searchByName" text="Nach Name suchen"/>
+        <text name="icm_searchPrompt" text="Steuerungsnamen zur Suche eingeben"/>
+        <text name="icm_filterByKey" text="Nach Taste filtern"/>
+        <text name="icm_filterByGamepad" text="Nach Gamepad filtern"/>
+        <text name="icm_clearFilters" text="Filter löschen"/>
+        <text name="icm_actionHeader" text="Aktion"/>
+        
+        <!-- Status messages -->
+        <text name="icm_showingAll" text="Alle %d Steuerungen werden angezeigt"/>
+        <text name="icm_showingFiltered" text="%d von %d Steuerungen werden angezeigt"/>
+        <text name="icm_nameFilter" text="Namensfilter: '%s'"/>
+        <text name="icm_inputFilter" text="Eingabefilter: %s"/>
+        
+        <!-- Dialogs -->
+        <text name="icm_pressKeyToFilter" text="Drücke eine beliebige Taste, um Steuerungen nach dieser Eingabe zu filtern&#10;&#10;Drücke ESC zum Abbrechen"/>
+        <text name="icm_pressGamepadToFilter" text="Drücke eine beliebige Gamepad-Taste oder bewege eine Achse, um Steuerungen nach dieser Eingabe zu filtern&#10;&#10;Drücke ESC zum Abbrechen"/>
+        <text name="icm_noControlsMatch" text="Keine Steuerungen entsprechen deinen Filtern"/>
+        
+        <!-- Tooltips/help -->
+        <text name="icm_conflictWarning" text="Warnung: Mehrere Aktionen verwenden diese Eingabe"/>
+        <text name="icm_menuNavWarning" text="Achtung: Das Ändern der Menünavigations-Steuerungen kann die Bedienung von Menüs erschweren"/>
+    </texts>
+</l10n>

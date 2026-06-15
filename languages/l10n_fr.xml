@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>Ozz</translationContributors>
+    <texts>
+        <!-- Menu title -->
+        <text name="icm_title" text="Commandes améliorées"/>
+        
+        <!-- Filter controls -->
+        <text name="icm_searchByName" text="Rechercher par nom"/>
+        <text name="icm_searchPrompt" text="Saisissez le nom de la commande à rechercher"/>
+        <text name="icm_filterByKey" text="Filtrer par touche"/>
+        <text name="icm_filterByGamepad" text="Filtrer par manette"/>
+        <text name="icm_clearFilters" text="Effacer les filtres"/>
+        <text name="icm_actionHeader" text="Action"/>
+        
+        <!-- Status messages -->
+        <text name="icm_showingAll" text="Affichage de toutes les %d commandes"/>
+        <text name="icm_showingFiltered" text="Affichage de %d commandes sur %d"/>
+        <text name="icm_nameFilter" text="Filtre de nom : '%s'"/>
+        <text name="icm_inputFilter" text="Filtre d'entrée : %s"/>
+        
+        <!-- Dialogs -->
+        <text name="icm_pressKeyToFilter" text="Appuyez sur une touche du clavier pour filtrer les commandes par cette entrée&#10;&#10;Appuyez sur ÉCHAP pour annuler"/>
+        <text name="icm_pressGamepadToFilter" text="Appuyez sur un bouton de la manette ou déplacez un axe pour filtrer les commandes par cette entrée&#10;&#10;Appuyez sur ÉCHAP pour annuler"/>
+        <text name="icm_noControlsMatch" text="Aucune commande ne correspond à vos filtres"/>
+        
+        <!-- Tooltips/help -->
+        <text name="icm_conflictWarning" text="Avertissement : Plusieurs actions utilisent cette entrée"/>
+        <text name="icm_menuNavWarning" text="Attention : Modifier les commandes de navigation des menus peut rendre les menus difficiles à utiliser"/>
+    </texts>
+</l10n>
