@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="109">
     <author>Ozz</author>
     <version>1.0.0.0</version>
@@ -19,7 +19,7 @@ This mod allows you to manage your control bindings in an easier way. Features:
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
 ]]>
-        </en>
+</en>
         <de><![CDATA[Verbessertes Steuerungsmenü
 
 Mit diesem Mod kannst du deine Steuerungsbelegungen einfacher verwalten. Funktionen:
@@ -29,8 +29,8 @@ Mit diesem Mod kannst du deine Steuerungsbelegungen einfacher verwalten. Funktio
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
-    ]]>
-        </de>
+]]>
+</de>
         <fr><![CDATA[Menu de contrôle amélioré
 
 Ce mod vous permet de gérer vos affectations de commandes plus facilement. Fonctionnalités :
@@ -40,12 +40,12 @@ Ce mod vous permet de gérer vos affectations de commandes plus facilement. Fonc
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
-    ]]>
-        </fr>
+]]>
+</fr>
     </description>
     <extraSourceFiles>
-        <sourceFile filename="src/main.lua"/>
+        <sourceFile filename="src/main.lua" />
     </extraSourceFiles>
-    <multiplayer supported="true"/>
+    <multiplayer supported="true" />
     <l10n filenamePrefix="languages/l10n" />
 </modDesc>
