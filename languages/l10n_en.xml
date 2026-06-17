@@ -4,6 +4,13 @@
     <texts>
         <!-- Menu title -->
         <text name="icm_title" text="Improved Controls"/>
+
+        <!-- Debug categories -->
+        <text name="inputCategory_DEBUG_PLAYER" text="Player Debug"/>
+        <text name="inputCategory_DEBUG_VEHICLE" text="Vehicle Debug"/>
+        <text name="inputCategory_DEBUG_CONSOLE" text="Console Debug"/>
+        <text name="inputCategory_DEBUG_PC" text="PC Debug"/>
+        <text name="inputCategory_DEBUG_GAMINGSTATION" text="Gaming Station Debug"/>
         
         <!-- Filter controls -->
         <text name="icm_searchByName" text="Search by Name"/>

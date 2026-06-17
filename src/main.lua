@@ -1,5 +1,6 @@
 ImprovedControlsMenu = {}
 ImprovedControlsMenu.dir = g_currentModDirectory
+ImprovedControlsMenu.modName = g_currentModName
 
 -- Source required files
 source(ImprovedControlsMenu.dir .. "src/ImprovedControlsController.lua")
@@ -10,6 +11,7 @@ function ImprovedControlsMenu:loadMap()
     
     -- Create and initialize the controls frame
     local controlsFrame = ImprovedControlsFrame.new()
+    controlsFrame.customEnvironment = ImprovedControlsMenu.modName
     g_gui:loadGui(ImprovedControlsMenu.dir .. "src/gui/ImprovedControlsFrame.xml", "ImprovedControlsFrame", controlsFrame, true)
     
     -- Initialize with our custom controller

@@ -450,7 +450,7 @@ end
 
 function ImprovedControlsFrame:getTitleForSectionHeader(list, section)
     local categoryName = self.controlsData[section].name
-    return g_i18n:convertText(categoryName)
+    return g_i18n:convertText(categoryName, self.customEnvironment)
 end
 
 function ImprovedControlsFrame:getNumberOfItemsInSection(list, section)
