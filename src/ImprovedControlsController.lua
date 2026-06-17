@@ -134,16 +134,30 @@ function ImprovedControlsController:getFilteredDeviceCategoryActionBindings(devi
         local filteredCategory = {
             name = category.name
         }
-        
+
+        local categoryMatchesName = false
+        if self.nameFilter ~= "" then
+            local resolvedName = g_i18n:convertText(category.name, self.customEnvironment) or category.name
+            categoryMatchesName = resolvedName:lower():find(self.nameFilter:lower(), 1, true) ~= nil
+        end
+
         for _, actionBinding in ipairs(category) do
             totalActions = totalActions + 1
-            
-            if self:matchesFilters(actionBinding) then
+
+            local passes
+            if categoryMatchesName then
+                -- Whole section matches: include every item, but still honour any input filter
+                passes = self.inputFilter == nil or self:actionUsesInput(actionBinding, self.inputFilter)
+            else
+                passes = self:matchesFilters(actionBinding)
+            end
+
+            if passes then
                 table.insert(filteredCategory, actionBinding)
                 filteredActions = filteredActions + 1
             end
         end
-        
+
         -- Only include category if it has actions
         if #filteredCategory > 0 then
             table.insert(filteredCategories, filteredCategory)

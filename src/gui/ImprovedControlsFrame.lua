@@ -29,6 +29,7 @@ end
 
 function ImprovedControlsFrame:initialize(controlsController)
     self.controlsController = controlsController
+    self.controlsController.customEnvironment = self.customEnvironment
 
     self.controlsController:setMessageCallback(function(messageId, additionalText, addLine)
         self:setControlsMessage(messageId, additionalText, addLine)
