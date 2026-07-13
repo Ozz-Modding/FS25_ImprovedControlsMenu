@@ -113,6 +113,11 @@ function ImprovedControlsFrame:onFrameOpen()
     self.numTotalDevices = 3 + g_inputBinding.numActiveGamepads
     self.dataRowOffset = 0
     self:assignDeviceTableData()
+
+    if self.controlsSlider ~= nil then
+        self.controlsSlider:setDataElement(self.controlsList)
+    end
+
     self.controlsList:makeCellVisible(1, 1)
     self.nextFocusSection = 1
     self.nextFocusCell = 1

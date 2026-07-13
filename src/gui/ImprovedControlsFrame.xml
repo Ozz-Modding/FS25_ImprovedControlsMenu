@@ -44,9 +44,22 @@
             </ListItem>
         </SmoothList>
         <Bitmap profile="fs25_stopClipper" name="bottomClipper"/>
+        <ThreePartBitmap profile="icm_sliderDockedBg" id="controlsSliderBox">
+            <ThreePartBitmap profile="fs25_sliderDockedBox">
+                <Slider profile="fs25_sliderDocked" id="controlsSlider" dataElementId="controlsList"/>
+            </ThreePartBitmap>
+        </ThreePartBitmap>
     </GuiElement>
 
     <GUIProfiles>
+        <!-- Docked scrollbar background. Extends base game slider bg; anchored to the
+             right edge of the container. Tweak position/size here while testing. -->
+        <Profile name="icm_sliderDockedBg" extends="fs25_sliderDockedBg">
+            <anchors value="1 1 0.5 0.5"/>
+            <pivot value="1 0.5"/>
+            <position value="75px 0px"/>
+        </Profile>
+
         <Profile name="icm_filterStatus" extends="fs25_textDefault" with="anchorTopLeft">
             <size value="1200px 30px"/>
             <position value="50px 10px"/>
