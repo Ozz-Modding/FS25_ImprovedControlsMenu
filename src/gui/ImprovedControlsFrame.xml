@@ -28,14 +28,17 @@
                 <Bitmap profile="fs25_settingsControlsSeparator" position="485px 0px"/>
                 <Button profile="fs25_settingsControlsListButton" name="actionButton1" position="490px 0px" onClick="onMenuAcceptUp">
                     <ThreePartBitmap profile="fs25_settingsControlsListButtonBg"/>
+                    <InputGlyph profile="fs25_settingsControlsListGlyph" name="actionGlyph1"/>
                 </Button>
                 <Bitmap profile="fs25_settingsControlsSeparator" position="785px 0px"/>
                 <Button profile="fs25_settingsControlsListButton" name="actionButton2" position="790px 0px" onClick="onMenuAcceptUp">
                     <ThreePartBitmap profile="fs25_settingsControlsListButtonBg"/>
+                    <InputGlyph profile="fs25_settingsControlsListGlyph" name="actionGlyph2"/>
                 </Button>
                 <Bitmap profile="fs25_settingsControlsSeparator" position="1085px 0px"/>
                 <Button profile="fs25_settingsControlsListButton" name="actionButton3" position="1090px 0px" onClick="onMenuAcceptUp">
                     <ThreePartBitmap profile="fs25_settingsControlsListButtonBg"/>
+                    <InputGlyph profile="fs25_settingsControlsListGlyph" name="actionGlyph3"/>
                 </Button>
                 <Bitmap profile="fs25_settingsControlsSeparator" position="1385px 0px"/>
             </ListItem>

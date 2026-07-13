@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="109">
     <author>Ozz</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <iconFilename>icon_ImprovedControlsMenu.dds</iconFilename>
     <title>
         <en>Improved Controls Menu</en>
@@ -18,6 +18,12 @@ This mod allows you to manage your control bindings in an easier way. Features:
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
+Changelog:
+
+1.0.0.1:
+- Controls now render with icon glyphs where applicable.
+- Add a slider to the controls list for easier navigation.
+
 ]]>
 </en>
         <de><![CDATA[Verbessertes Steuerungsmenü
@@ -29,10 +35,11 @@ Mit diesem Mod kannst du deine Steuerungsbelegungen einfacher verwalten. Funktio
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
-Changelog:
+Änderungsliste:
 
 1.0.0.1:
-- Add a slider to the controls list for easier navigation.
+- Steuerungen werden jetzt mit Icon-Glyphen gerendert, wo zutreffend.
+- Schieberegler zur Steuerliste für einfachere Navigation hinzugefügt.
 
 ]]>
 </de>
@@ -44,6 +51,12 @@ Ce mod vous permet de gérer vos affectations de commandes plus facilement. Fonc
 - Permet d'assigner des commandes "verrouillées", par ex. la navigation dans les menus, à n'importe quel périphérique.
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
+
+Journal des modifications:
+
+1.0.0.1:
+- Les commandes sont maintenant affichées avec des icônes glyphes si applicable.
+- Ajout d'un curseur à la liste des commandes pour une navigation plus facile.
 
 ]]>
 </fr>

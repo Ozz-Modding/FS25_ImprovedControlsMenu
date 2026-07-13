@@ -489,9 +489,42 @@ function ImprovedControlsFrame:populateCellForItemInSection(list, section, index
             columnBinding = actionBinding.columnBindings[deviceIndex]
         end
 
+        local glyph = cell:getAttribute("actionGlyph" .. i)
         local button = cell:getAttribute("actionButton" .. i)
         if button then
-            button:setText(actionBinding.columnTexts[deviceIndex] or "")
+            if glyph then
+                glyph:setActions({actionBinding.action.name}, nil, nil, nil, columnBinding)
+                local hasKeyName = false
+                if glyph.glyphElement ~= nil then
+                    for _, actionName in pairs(glyph.glyphElement.actionNames) do
+                        if glyph.glyphElement.keyNames[actionName] ~= nil and glyph.glyphElement.keyNames[actionName][1] ~= "" then
+                            hasKeyName = true
+                        end
+                    end
+                end
+                local showGlyph = columnBinding ~= nil and hasKeyName
+                glyph:setVisible(showGlyph)
+                if hasKeyName then
+                    button:setText("")
+                else
+                    button:setText(actionBinding.columnTexts[deviceIndex] or "")
+                end
+
+                local oldGlyphFocusEnter = glyph.onFocusEnter
+                function glyph.onFocusEnter()
+                    oldGlyphFocusEnter(glyph)
+                    glyph.glyphElement:setButtonGlyphColor(SettingsControlsFrame.COLOR.BLACK)
+                end
+                local oldGlyphFocusLeave = glyph.onFocusLeave
+                function glyph.onFocusLeave(element)
+                    oldGlyphFocusLeave(element)
+                    if glyph.glyphElement ~= nil then
+                        glyph.glyphElement:setButtonGlyphColor(SettingsControlsFrame.COLOR.GREEN)
+                    end
+                end
+            else
+                button:setText(actionBinding.columnTexts[deviceIndex] or "")
+            end
 
             local actualDeviceIndex = i + self.dataRowOffset
 
