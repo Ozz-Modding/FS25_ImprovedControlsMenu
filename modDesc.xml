@@ -13,7 +13,7 @@
         
 This mod allows you to manage your control bindings in an easier way. Features:
 - Filter controls by name
-- Filter controls by key or gamepad input
+- Filter controls by key or controller input
 - Allows you to bind 'locked' controls e.g. menu navigation to any device.
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
@@ -22,7 +22,7 @@ Changelog:
 
 1.0.0.2:
 - Fix joystick axis filtering to find bindings in both directions.
-
+- Use "controller" wording for the input filter.
 
 1.0.0.1:
 - Controls now render with icon glyphs where applicable.
@@ -34,12 +34,16 @@ Changelog:
 
 Mit diesem Mod kannst du deine Steuerungsbelegungen einfacher verwalten. Funktionen:
 - Steuerungen nach Name filtern
-- Steuerungen nach Taste oder Gamepad-Eingabe filtern
+- Steuerungen nach Taste oder Controller-Eingabe filtern
 - Ermöglicht es, "gesperrte" Steuerungen, z. B. die Menünavigation, an jedes Gerät zu binden.
 
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
 Änderungsliste:
+
+1.0.0.2:
+- Joystick-Achsenfilter findet jetzt Belegungen in beiden Richtungen.
+- "Controller" statt "Gamepad" beim Eingabefilter.
 
 1.0.0.1:
 - Steuerungen werden jetzt mit Icon-Glyphen gerendert, wo zutreffend.
@@ -57,6 +61,9 @@ Ce mod vous permet de gérer vos affectations de commandes plus facilement. Fonc
 GitHub: https://github.com/Ozz-Modding/FS25_ImprovedControlsMenu
 
 Journal des modifications:
+
+1.0.0.2:
+- Le filtre par axe de joystick trouve désormais les affectations dans les deux sens.
 
 1.0.0.1:
 - Les commandes sont maintenant affichées avec des icônes glyphes si applicable.

@@ -16,7 +16,7 @@
         <text name="icm_searchByName" text="Search by Name"/>
         <text name="icm_searchPrompt" text="Enter control name to search for"/>
         <text name="icm_filterByKey" text="Filter by Key"/>
-        <text name="icm_filterByGamepad" text="Filter by Controllers"/>
+        <text name="icm_filterByGamepad" text="Filter by Controller"/>
         <text name="icm_clearFilters" text="Clear Filters"/>
         <text name="icm_actionHeader" text="Action"/>
         

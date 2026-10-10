@@ -16,7 +16,7 @@
         <text name="icm_searchByName" text="Nach Name suchen"/>
         <text name="icm_searchPrompt" text="Steuerungsnamen zur Suche eingeben"/>
         <text name="icm_filterByKey" text="Nach Taste filtern"/>
-        <text name="icm_filterByGamepad" text="Nach Gamepad filtern"/>
+        <text name="icm_filterByGamepad" text="Nach Controller filtern"/>
         <text name="icm_clearFilters" text="Filter löschen"/>
         <text name="icm_actionHeader" text="Aktion"/>
         
@@ -28,7 +28,7 @@
         
         <!-- Dialogs -->
         <text name="icm_pressKeyToFilter" text="Drücke eine beliebige Taste, um Steuerungen nach dieser Eingabe zu filtern&#10;&#10;Drücke ESC zum Abbrechen"/>
-        <text name="icm_pressGamepadToFilter" text="Drücke eine beliebige Gamepad-Taste oder bewege eine Achse, um Steuerungen nach dieser Eingabe zu filtern&#10;&#10;Drücke ESC zum Abbrechen"/>
+        <text name="icm_pressGamepadToFilter" text="Drücke eine beliebige Controller-Taste oder bewege eine Achse, um Steuerungen nach dieser Eingabe zu filtern&#10;&#10;Drücke ESC zum Abbrechen"/>
         <text name="icm_noControlsMatch" text="Keine Steuerungen entsprechen deinen Filtern"/>
         
         <!-- Tooltips/help -->
