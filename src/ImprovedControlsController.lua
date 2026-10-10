@@ -189,12 +189,13 @@ end
 
 -- Input capture reports physical axes without a direction suffix. Search both
 -- directions of that axis, while keeping button/key names and devices exact.
-local function normalizeFilterAxisName(axisName)
+local function normalizeAxisName(axisName)
     if axisName:match("^AXIS_") then
         return (axisName:gsub("[+-]$", ""))
     end
     return axisName
 end
+
 -- Check if a display action binding uses a specific input
 function ImprovedControlsController:actionUsesInput(displayAction, inputFilter)
     for _, binding in pairs(displayAction.columnBindings) do
@@ -204,7 +205,7 @@ function ImprovedControlsController:actionUsesInput(displayAction, inputFilter)
             for _, filterAxis in ipairs(inputFilter.axisNames) do
                 local found = false
                 for _, bindingAxis in ipairs(binding.axisNames) do
-                    if normalizeFilterAxisName(bindingAxis) == normalizeFilterAxisName(filterAxis) then
+                    if normalizeAxisName(bindingAxis) == normalizeAxisName(filterAxis) then
                         found = true
                         break
                     end
